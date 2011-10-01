@@ -1,0 +1,3 @@
+[submodule "aws-sdk-for-java"]
+	path = aws-sdk-for-java
+	url = git@github.com:xoba/aws-sdk-for-java.git
