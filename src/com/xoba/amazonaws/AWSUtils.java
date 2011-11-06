@@ -1,11 +1,15 @@
 package com.xoba.amazonaws;
 
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.model.ObjectListing;
 import com.amazonaws.services.s3.model.S3ObjectSummary;
+import com.amazonaws.services.sqs.AmazonSQS;
+import com.amazonaws.services.sqs.model.CreateQueueRequest;
+import com.amazonaws.services.sqs.model.CreateQueueResult;
 
 public class AWSUtils {
 
@@ -41,6 +45,11 @@ public class AWSUtils {
 			}
 		}
 		listener.done();
+	}
+
+	public static CreateQueueResult createSQS(AmazonSQS sqs, String name, int visibilityTimeoutSeconds) {
+		return sqs.createQueue(new CreateQueueRequest(name).withAttributes(Collections.singletonMap(
+				"VisibilityTimeout", new Integer(visibilityTimeoutSeconds).toString())));
 	}
 
 }
