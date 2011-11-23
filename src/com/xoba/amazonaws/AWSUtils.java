@@ -20,7 +20,7 @@ public class AWSUtils {
 
 	public static interface IBucketListener {
 
-		public boolean add(S3ObjectSummary s);
+		public boolean add(S3ObjectSummary s) throws Exception;
 
 		public void done();
 
