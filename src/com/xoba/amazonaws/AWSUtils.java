@@ -8,6 +8,7 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.logging.Level;
 
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.model.ObjectListing;
@@ -17,6 +18,10 @@ import com.amazonaws.services.sqs.model.CreateQueueRequest;
 import com.amazonaws.services.sqs.model.CreateQueueResult;
 
 public class AWSUtils {
+
+	static {
+		java.util.logging.Logger.getLogger("com.amazonaws.request").setLevel(Level.OFF);
+	}
 
 	public static interface IBucketListener {
 
