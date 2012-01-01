@@ -23,6 +23,9 @@ public class AWSUtils {
 		java.util.logging.Logger.getLogger("com.amazonaws.request").setLevel(Level.OFF);
 	}
 
+	public static void init() throws Exception {
+	}
+
 	public static interface IBucketListener {
 
 		public boolean add(S3ObjectSummary s) throws Exception;
