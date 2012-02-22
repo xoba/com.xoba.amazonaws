@@ -11,6 +11,14 @@
 	<classpathentry kind="lib" path="lib/mail-1.4.3.jar"/>
 	<classpathentry kind="lib" path="lib/stax-1.2.0.jar"/>
 	<classpathentry kind="lib" path="lib/stax-api-1.0.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/jackson-all-1.9.2.jar"/>
+	<classpathentry kind="lib" path="lib/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="lib/aspectjweaver.jar"/>
+	<classpathentry kind="lib" path="lib/freemarker-2.3.18.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-core-asl-1.8.7.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-mapper-asl-1.8.7.jar"/>
+	<classpathentry kind="lib" path="lib/spring-beans-3.0.7.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-3.0.7.jar"/>
+	<classpathentry kind="lib" path="lib/spring-core-3.0.7.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
